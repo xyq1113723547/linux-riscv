@@ -1304,7 +1304,7 @@ static inline int pgd_devmap(pgd_t pgd)
 {
 	return 0;
 }
-#endif
+//#endif
 
 #if !defined(CONFIG_TRANSPARENT_HUGEPAGE) || \
 	!defined(CONFIG_HAVE_ARCH_TRANSPARENT_HUGEPAGE_PUD)
