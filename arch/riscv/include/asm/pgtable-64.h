@@ -211,6 +211,8 @@ static inline bool mm_pud_folded(struct mm_struct *mm)
 }
 
 #define pmd_index(addr) (((addr) >> PMD_SHIFT) & (PTRS_PER_PMD - 1))
+#define pud_index(addr) (((addr) >> PUD_SHIFT) & (PTRS_PER_PUD - 1))
+#define p4d_index(addr) (((addr) >> P4D_SHIFT) & (PTRS_PER_P4D - 1))
 
 static inline pmd_t pfn_pmd(unsigned long pfn, pgprot_t prot)
 {
